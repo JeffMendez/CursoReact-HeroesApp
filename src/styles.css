@@ -1,0 +1,76 @@
+:root {
+  --bg-text-hero: -webkit-linear-gradient(purple, red);
+}
+
+body {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(/assets/background-heroes.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card-hero {
+  width: 16rem;
+  height: 25rem;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 1rem;
+  transition: height 0.5s;
+  cursor: pointer;
+}
+
+.card-hero:hover {
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card-hero:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  transition: height 0.3s ease-out;
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+  border-radius: 1rem;
+}
+
+.card-hero:hover:before {
+  height: 100%;
+}
+
+.card-body-hero {
+  color: white;
+  bottom: 0px;
+  position: absolute;
+  padding: 1rem;
+}
+
+.card-body-hero small {
+  color: rgba(221, 210, 210, 0.75)
+}
+
+.hero-title {
+  background: var(--bg-text-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-title h1 {
+  font-size: 5rem;
+}

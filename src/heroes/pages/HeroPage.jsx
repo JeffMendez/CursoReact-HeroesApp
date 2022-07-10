@@ -28,12 +28,11 @@ export const HeroPage = () => {
         const primary = `rgb(${dominant[0]}, ${dominant[1]}, ${dominant[2]})`
         const sec = `rgb(${palette[1][0]}, ${palette[1][1]}, ${palette[1][2]})`
 
-        // CSS Dinamico
         document.documentElement.style.setProperty('--bg-text-hero', `-webkit-linear-gradient(${primary}, ${sec})`)
     }
 
     return (
-        <div className="row mt-5">
+        <div className="row mt-5 mb-5">
             <div className="col-4 animate__animated animate__pulse animate__faster">
                 <img 
                     ref={refImg}
@@ -51,13 +50,12 @@ export const HeroPage = () => {
                     <h1>{hero.superhero}</h1>
                 </div>
 
-                <div className="list-group list-group-flush">
-                    <p>
-                        <b>Alter ego:</b> { hero.alter_ego } <br/>
-                        <b>Publisher:</b> { hero.publisher } <br/>
-                        <b>First appearance:</b> { hero.first_appearance } <br/>
-                    </p>
-                </div>
+                <ul className="list-group list-group-flush col-8 rounded">
+                    <li className="list-group-item"><b>Alter ego:</b> { hero.alter_ego }</li>
+                    <li className="list-group-item"><b>Publisher:</b> { hero.publisher }</li>
+                    <li className="list-group-item"><b>First appearance:</b> { hero.first_appearance }</li>
+                </ul>
+                
 
                 <h4 className="mt-3"><b>Characters</b></h4>
                 <p>{hero.characters}</p>

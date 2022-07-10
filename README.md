@@ -8,6 +8,6 @@ Contiene:
 - Login básico
 - Listado de datos
 - CSS dinámico
-- Uso de memo y navigate 
+- Uso de memo, context, reducer y navigate 
 
 Elaborado en Julio de 2022.

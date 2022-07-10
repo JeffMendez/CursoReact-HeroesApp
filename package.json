@@ -1,4 +1,5 @@
 {
+  "homepage": "http://JeffMendez.github.io/CursoReact-HeroesApp",
   "name": "heroes-spa",
   "private": true,
   "version": "0.0.0",
@@ -9,6 +10,7 @@
   },
   "dependencies": {
     "colorthief": "^2.3.2",
+    "gh-pages": "^4.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "6"

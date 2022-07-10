@@ -9,18 +9,14 @@ export const LoginPage = () => {
 
     const onLogin = () => {
         login('Jeffry Mendez');
-
         const lastPath = localStorage.getItem('lastPath') || "/";
-
-        navigate(lastPath, {
-            replace: true
-        });
+        navigate(lastPath, { replace: true });
     }
 
     return (
         <div className="login-container">
             <div className="login-card">
-                <div className="card">
+                <div className="card login-bg rounded-lg">
                     <div className="card-body">
                         <div className="row">
                             <div className="col">

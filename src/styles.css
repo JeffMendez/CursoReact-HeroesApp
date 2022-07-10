@@ -65,8 +65,15 @@ code {
   color: rgba(221, 210, 210, 0.75)
 }
 
+.login-bg {
+  background-image: url(/assets/background-heroes.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .hero-title {
   background: var(--bg-text-hero);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

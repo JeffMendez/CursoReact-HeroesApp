@@ -1,14 +1,12 @@
 import { useState } from "react"
-import { Link, Navigate, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 export const HeroCard = (
     {
         id,
         superhero,
-        publisher,
         alter_ego,
         first_appearance,
-        characters
     }
 ) => {
 
